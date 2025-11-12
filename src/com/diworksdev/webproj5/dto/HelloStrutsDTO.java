@@ -13,10 +13,10 @@ public class HelloStrutsDTO {
 		this.userId = userId;
 	}
 
-	public String userName() {
+	public String getUserName() {
 		return userName;
 	}
-	public void setuserName(String userName) {
+	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
