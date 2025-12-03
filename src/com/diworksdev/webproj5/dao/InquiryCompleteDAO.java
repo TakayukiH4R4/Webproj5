@@ -14,6 +14,7 @@ public class InquiryCompleteDAO {
 
 	List<InquiryDTO> inquiryDTOList = new ArrayList<InquiryDTO>();
 
+//関数selectを作成
 	public List<InquiryDTO> select() {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
@@ -42,6 +43,7 @@ public class InquiryCompleteDAO {
 		return inquiryDTOList;
 	}
 
+//関数insertを作成
 	public int insert(String name, String qtype, String body) {
 		int ret = 0;
 		DBConnector db = new DBConnector();
