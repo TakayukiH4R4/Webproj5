@@ -24,14 +24,14 @@
 	GET通信
 	<s:form method = "get" action = "TestAction">
 		<s:textfield name = "username"/>
-		<s:textfield name = "pasword"/>
+		<s:textfield name = "password"/>
 		<s:submit value = "送信"/>
 	</s:form>
 
 	POST通信
 	<s:form method = "post" action = "TestAction">
 		<s:textfield name = "username"/>
-		<s:textfield name = "password"/>
+		<s:textfield name = "password" />
 		<s:submit value = "送信"/>
 	</s:form>
 

@@ -23,8 +23,8 @@ public class TestAction extends ActionSupport implements SessionAware{
 		TestDAO dao = new TestDAO();
 		int count = dao.insert(username,  password);
 
-		if(count > 0) {
-			ret = SUCCESS;
+		if(count > 0)  {
+			ret = ERROR;
 		}
 
 		loginDTOList = dao.select(username,  password);
