@@ -71,4 +71,5 @@ public class InquiryCompleteDAO {
 		return ret;
 	}
 
+
 }

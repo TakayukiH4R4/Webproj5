@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel = "stylesheet" type="text/css" href = "./css/style/css">
+<link rel = "stylesheet" type="text/css"  href ="./css/style.css">
+
 <title>お問い合わせ 受付完了</title>
 </head>
 <body>
@@ -15,14 +16,14 @@
 		<tr>
 			<th>名前</th>
 			<th>お問い合わせの種類</th>
-			<th>お問い合わせの種類</th>
+			<th>お問い合わせ内容</th>
 		</tr>
 
 		<s:iterator value = "#session.inquiryDTOList">
 			<tr>
 				<td><s:property value = "name"/></td>
 
-				<s:if test='qtype=="body"'>
+				<s:if test='qtype=="company"'>
 					<td>会社について</td>
 				</s:if>
 				<s:if test='qtype=="product"'>
@@ -36,6 +37,8 @@
 		</s:iterator>
 	</tbody>
 </table>
+<br>
+
 
 </body>
 </html>

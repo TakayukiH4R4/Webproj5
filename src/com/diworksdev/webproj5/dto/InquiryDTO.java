@@ -27,7 +27,5 @@ public class InquiryDTO {
 		this.body = body;
 	}
 
-
-
 }
 

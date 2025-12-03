@@ -25,7 +25,7 @@ public class InquiryCompleteAction extends ActionSupport implements SessionAware
 		int count = dao.insert(name, qtype, body);
 		if(count  > 0) {
 			inquiryDTOList = dao.select();
-			session.put("inquiryDTOList", "inquiryDTOList");
+			session.put("inquiryDTOList", inquiryDTOList);
 
 			ret = SUCCESS;
 		}
